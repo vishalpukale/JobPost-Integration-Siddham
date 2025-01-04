@@ -54,7 +54,7 @@ const NewCard2 = ({ gradient }) => {
 
 
                             <div style={{ width: '100%', height: '100%', boxShadow: '0px 0px 4px #C9FFFC', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 8, display: 'inline-flex' }}>
-                                {aboutCompany.detail.map((item, index) => (<div key={index} style={{ border: '1.50px #D388FF solid', paddingLeft: 8, paddingRight: 8, paddingTop: 4, paddingBottom: 4, borderRadius: 8, justifyContent: 'center', alignItems: 'center', gap: 8, display: 'flex' }}>     <div style={{ background: 'linear-gradient(to right, rgba(211, 136, 255, 1), rgba(75, 148, 246, 1))', WebkitBackgroundClip: 'text', color: 'transparent', textAlign: 'center', fontSize: 11, fontFamily: 'SF UI Text', fontWeight: '700', textTransform: 'uppercase', height: 12, letterSpacing: 0.48, wordWrap: 'break-word' }}>         {item}     </div> </div>
+                                {aboutCompany.detail.map((item, index) => (<div key={index} style={{ border: '1.50px #D388FF solid', paddingLeft: 8, paddingRight: 8, paddingTop: 4, paddingBottom: 4, borderRadius: 8, justifyContent: 'center', alignItems: 'center', gap: 8, display: 'flex' }}>     <div style={{ background: gradient, WebkitBackgroundClip: 'text', color: 'transparent', textAlign: 'center', fontSize: 11, fontFamily: 'SF UI Text', fontWeight: '700', textTransform: 'uppercase', height: 12, letterSpacing: 0.48, wordWrap: 'break-word' }}>         {item}     </div> </div>
                                 ))}
                             </div>
                             {/* boxShadow: '0px 0px 4px #D388FF', */}
