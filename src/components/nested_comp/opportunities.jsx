@@ -2,6 +2,14 @@ import React from 'react';
 // import NewCard from './NewCard';
 import NewCard2 from './NewCard2';
 
+
+const gradientColor = {
+    one: "linear-gradient(to right, rgba(211, 136, 255, 1), rgba(75, 148, 246, 1))",
+    two: "linear-gradient(to right, rgba(255, 95, 215, 1), rgba(200, 106, 255, 1))",
+    three: "linear-gradient(to right, rgba(255, 15, 123, 1), rgba(248, 155, 41, 1))",
+    four: "linear-gradient(to right, rgba(40, 144, 250, 1), rgba(110, 214, 245, 1))",
+  };
+
 const styles = {
     container: {
         // width: '100%',
@@ -22,13 +30,20 @@ const styles = {
 };
 
 const Opportunities = () => {
+
+    const getRandomGradient = () => {
+        const gradientKeys = Object.keys(gradientColor);
+        const randomKey = gradientKeys[Math.floor(Math.random() * gradientKeys.length)];
+        return gradientColor[randomKey];
+      };
+
     return (
         <div style={styles.container}>
             <div style={styles.card}>
-                <NewCard2 />
+                <NewCard2 gradient={getRandomGradient()}/>
             </div>
             <div style={styles.card}>
-                <NewCard2 />
+                <NewCard2 gradient={getRandomGradient()}/>
             </div>
             {/*
             <div style={styles.card}>
