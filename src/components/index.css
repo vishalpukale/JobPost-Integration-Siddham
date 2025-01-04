@@ -1,0 +1,79 @@
+/* .main-container{
+    width: 100%;
+    height: 100vh;
+    background: white;
+} */
+
+.tilt {
+    transform: rotate(-45deg);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+/* General hover effect for icons */
+.icon-container {
+    background-color: transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .icon-container:hover {
+    background-color: rgba(0, 0, 0, 0.05); /* Light gray hover background */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    cursor: pointer;
+  }
+  
+  /* Search box styles */
+  .search-box {
+    width: 100%;
+    height: 44px;
+    padding: 0 24px;
+    background: #f5f5f5;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .search-box:hover {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  .search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #353535;
+    font-size: 16px;
+    font-family: 'SF UI Text', sans-serif;
+    font-weight: 400;
+  }
+  
+  .search-box input::placeholder {
+    color: #aaa; /* Placeholder text color */
+  }
+  
+  .search-box input:focus {
+    outline: none;
+  }
+  
+  /* Avatar and Layila images */
+  .avatar-image,
+  .layila-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .avatar-image:hover,
+  .layila-image:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
